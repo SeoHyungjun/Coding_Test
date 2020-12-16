@@ -1,0 +1,1 @@
+                if(my_pin[cur].x == 41) {
