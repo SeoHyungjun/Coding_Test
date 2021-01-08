@@ -11,7 +11,6 @@
     그래프 탐색이란 하나의 노드를 시작으로 다수의 노드를 방문하는 것을 말함
     또한 두 노드가 간선으로 연결되어 있다면, '두 노드는 인접하다(adjacent)'라고 표현
 
-![graph](https://user-images.githubusercontent.com/30036777/103998102-1661d800-51df-11eb-81f7-c83f9dd1f7d4.png)
 <img src="https://user-images.githubusercontent.com/30036777/103998102-1661d800-51df-11eb-81f7-c83f9dd1f7d4.png" width="400" height="370"></img>
 
 
