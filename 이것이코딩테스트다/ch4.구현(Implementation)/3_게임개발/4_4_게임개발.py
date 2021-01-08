@@ -17,6 +17,8 @@ change = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 change_cnt = 0
 # 첫 위치는 무조건 육지라고 가정
 answer = 1
+# 시작위치에서 check[a][b] 방문처리
+check[a][b] = 1
 
 while True:
     # 바라보는 방향을 반시계 방향으로 1번 변경
@@ -45,6 +47,7 @@ while True:
             # 방향 전환 횟수 초기화
             change_cnt = 0
             # 이동한 육지 수 증가
+            print(a, b)
             answer += 1
             continue
 
