@@ -15,7 +15,8 @@ for _ in range(n):
 change = [(-1, 0), (0, 1), (1, 0), (0, -1)]
 
 change_cnt = 0
-answer = 0
+# 첫 위치는 무조건 육지라고 가정
+answer = 1
 
 while True:
     # 바라보는 방향을 반시계 방향으로 1번 변경
@@ -27,7 +28,7 @@ while True:
 
     next_a = a + change[d][0]
     next_b = b + change[d][1]
-    print(next_a, next_b, change_cnt)
+    #print(next_a, next_b, change_cnt)
 
     #if next_a < 0 or next_a > n or next_b < 0 or next_b > m:
     #    print('out')
