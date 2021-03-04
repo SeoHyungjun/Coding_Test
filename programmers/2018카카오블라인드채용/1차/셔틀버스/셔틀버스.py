@@ -2,7 +2,7 @@
 
 def solution(n, t, m, timetable):
     answer = 0
-    mintable = []
+    #mintable = []
     # n 셔틀운행횟수, t 운행간격, m 최대탑승인원
 
     # timetable안의 시:분 을 분으로 통일
