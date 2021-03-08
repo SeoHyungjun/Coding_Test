@@ -1,4 +1,4 @@
-# 2021-03-05 18:08 ->
+# 2021-03-05 18:08 -> 18:25
 
 def solution(numbers, hand):
     answer = ''
@@ -10,7 +10,6 @@ def solution(numbers, hand):
     other = [2, 5, 8, 0]
 
     for number in numbers:
-        print(number, number in leftside)
         if number in leftside or (number in other and abs(left[0]-pad[number][0]) + abs(left[1]-pad[number][1]) < abs(right[0]-pad[number][0]) + abs(right[1]-pad[number][1])):
             answer += 'L'
             left = pad[number]
