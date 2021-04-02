@@ -1,6 +1,5 @@
 N, r, c = map(int, input().split())
 
-
 def z_search(N, r, c, cnt):
     if N == 1:
         if r == 1 and c == 2:

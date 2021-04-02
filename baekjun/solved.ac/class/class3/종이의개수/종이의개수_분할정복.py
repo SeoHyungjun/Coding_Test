@@ -38,7 +38,6 @@ def check_board(arr):
         for i in range(3):
             for j in range(3):
                 check_board([sub[j*size:(j+1)*size] for sub in arr[i*size:(i+1)*size]])
-\
 
 n = int(input())
 
