@@ -20,7 +20,6 @@ def check(x, y, size):
                 answer += check(x + i*size//2, y + j*size//2, size//2)
         return '(' + answer + ')'
 
-
 n = int(sys.stdin.readline())
 
 for _ in range(n):
