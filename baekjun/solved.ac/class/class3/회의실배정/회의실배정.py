@@ -17,4 +17,3 @@ for st, en in table:
         count += 1
 
 print(count)
-
