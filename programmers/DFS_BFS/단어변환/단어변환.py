@@ -18,14 +18,15 @@ def solution(begin, target, words):
     queue = deque()
     queue.append((begin, 0))
 
-    while(queue):
+    while queue:
         cur, cnt = queue.popleft()
+        print(cur, cnt, queue)
 
         if cur == target:
             return cnt
 
         for word in words:
-            if check_word(cur, word) and cur != word:
+            if check_word(cur, word):
                 queue.append((word, cnt+1))
                 words.remove(word)
 
@@ -36,6 +37,7 @@ def solution(begin, target, words):
 a = "hit"
 b = "cog"
 c = ["hot", "dot", "dog", "lot", "log", "cog"]
+print(solution(a,b,c))
 
 a = "hit"
 b = "cog"
