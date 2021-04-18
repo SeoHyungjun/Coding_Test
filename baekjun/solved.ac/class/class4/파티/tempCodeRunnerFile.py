@@ -1,0 +1,2 @@
+
+    distance = [float('inf')] * N
