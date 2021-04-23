@@ -19,7 +19,6 @@ distance[st] = 0
 
 while queue:
     cost, city = heapq.heappop(queue)
-    print(cost, city, queue)
 
     if cost > distance[city]:
         continue
