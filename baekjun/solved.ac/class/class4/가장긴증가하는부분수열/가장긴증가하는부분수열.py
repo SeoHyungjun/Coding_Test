@@ -14,4 +14,4 @@ for i in range(1, N):
     else:
         dp[bisect.bisect_left(dp, arr[i])] = arr[i]
 
-print(dp)
+print(len(dp))
