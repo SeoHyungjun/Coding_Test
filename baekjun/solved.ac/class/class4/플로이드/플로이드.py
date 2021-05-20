@@ -30,7 +30,10 @@ for i in range(N):
             if distance[cur] + co < distance[ne]:
                 distance[ne] = distance[cur] + co
                 heapq.heappush(queue, (distance[ne], ne))
-
+    
+    for i in range(len(distance)):
+        if distance[i] == float('inf'):
+            distance[i] = 0
     answer.append(distance)
 
 for i in answer:
