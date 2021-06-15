@@ -9,12 +9,8 @@ for i in range(N):
     M, V = map(int, sys.stdin.readline().split())
     heapq.heappush(gam, (M, V)) 
 
-gam.sort(key = lambda x : (-x[1], x[0]))
-
 for i in range(K):
-    C = int(sys.stdin.readline())
-    bag.append(C)
-
+    bag.append(int(sys.stdin.readline()))
 bag.sort()
 
 avail = []
@@ -25,5 +21,8 @@ for i in bag:
 
     if avail:
         answer -= heapq.heappop(avail)
+
+    elif not gam:
+        break
 
 print(answer)
