@@ -1,5 +1,4 @@
 import sys
-import heapq
 
 def solve():
     N, M = map(int, sys.stdin.readline().split())
