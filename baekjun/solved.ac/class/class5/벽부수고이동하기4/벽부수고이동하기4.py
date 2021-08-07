@@ -41,7 +41,7 @@ for i in range(N):
                 if 0 <= i+dx < N and 0 <= j+dy < M and group[i+dx][j+dy] != -1 and group[i+dx][j+dy] not in visit_group:
                     cnt += dic_group[group[i+dx][j+dy]]
                     visit_group.add(group[i+dx][j+dy])
-            board[i][j] = cnt
+            board[i][j] = cnt % 10
 
 for b in board:
     print(*b, sep='')
