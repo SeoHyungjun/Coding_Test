@@ -45,6 +45,6 @@ init_min(0, N-1, 1)
 init_max(0, N-1, 1)
 
 for _ in range(M):
-    left, right = map(lambda x : int(x)-1, sys.stdin.readline().split())
-    print(left, right)
+    left, right = map(int, sys.stdin.readline().split())
+    left, right = left - 1, right - 1
     print(find_min(0, N-1, 1), find_max(0, N-1, 1))
