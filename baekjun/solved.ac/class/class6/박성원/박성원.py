@@ -15,13 +15,12 @@ def dfs(L, visit, rest):
 
     return dp[visit][rest]
 
-
 N = int(sys.stdin.readline())
 arr = [int(sys.stdin.readline()) for _ in range(N)]
 K = int(sys.stdin.readline())
 
 dp = [[-1]*K for _ in range(1<<N)] # dp[1][2] =>  [0001][2] 즉, 4개의 숫자 중 1개(4번째 위치가 1이므로)를 선택했을 때 나머지가 2가 나오는 경우의 수
-arr_len = [len(i) for i in str(arr)]
+arr_len = [len(str(i)) for i in arr]
 
 # 집합의 숫자들이 위치가 10**n 자리가 될 수 있으므로 미리 계산
 squared = [[-1]*sum(arr_len) for _ in range(N)]
