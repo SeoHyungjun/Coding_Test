@@ -25,5 +25,4 @@ def shuffle():
 N = int(sys.stdin.readline())
 P = list(map(int, sys.stdin.readline().split()))
 S = list(map(int, sys.stdin.readline().split()))
-
 print(shuffle())
