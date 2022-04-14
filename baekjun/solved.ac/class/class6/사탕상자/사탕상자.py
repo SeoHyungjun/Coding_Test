@@ -1,6 +1,6 @@
 import sys
 import math
-MAX_CANDY = 1000000
+MAX_CANDY = 1000001
 
 def update(node, start, end, index, diff):
     global tree
