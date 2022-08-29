@@ -2,9 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    std::ios_base :: sync_with_stdio(false);
-    std::cin.tie(NULL);
-    std::cout.tie(NULL);
+    std::ios_base :: sync_with_stdio(false); std::cin.tie(NULL); std::cout.tie(NULL);
 
 	int test_case;
     int N = 0, arr[1001] = {0,};
