@@ -1,6 +1,6 @@
 import sys
 
-answer = [0, 0, 0]
+answer = [0, 1, 1]
 for i in range(1, 10):
     for j, val in enumerate(list(map(int, sys.stdin.readline().split()))):
         if val > answer[0]:
